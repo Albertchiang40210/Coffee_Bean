@@ -21,6 +21,6 @@ services:
     command: streamlit run frontend.py --server.port 8501 --server.address 0.0.0.0
     ports:
       - "8501:8501"
-    restart: always
+    restart: "no"
     depends_on:
       - coffee_backend # 確保後端啟動後，前端才啟動

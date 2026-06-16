@@ -11,7 +11,7 @@ services:
       - "8000:8000"
     environment:
       - DB_HOST=host.docker.internal
-    restart: none
+    restart: "no"
 
   # 2. 前端視覺化戰情室 (Streamlit)
   coffee_frontend:
